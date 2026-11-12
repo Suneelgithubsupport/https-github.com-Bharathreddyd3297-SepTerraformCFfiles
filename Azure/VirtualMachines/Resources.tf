@@ -101,8 +101,8 @@ resource "azurerm_resource_group" "countdemo" {
   count = 2
   name = "Count-rg-${count.index + 1}"
 
-#   count.0--> 0
-#   count.1--> 1
+#   count.0--> 0+1 = 1
+#   count.1--> 1+1 = 2
     location = var.location
 }
 
